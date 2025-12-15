@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rick & Morty Explorer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>Rick & Morty Explorer</h1>
+
+  <input type="text" id="search" placeholder="Buscar personaje..." />
+
+  <select id="status">
+    <option value="">Estado</option>
+    <option value="alive">Alive</option>
+    <option value="dead">Dead</option>
+    <option value="unknown">Unknown</option>
+  </select>
+
+  <button id="favoritosBtn">Favoritos</button>
+</header>
+
+<main>
+  <p id="mensaje"></p>
+
+  <section id="personajes" class="grid"></section>
+
+  <button id="cargarMas">Cargar más</button>
+</main>
+
+<!-- MODAL DETALLE -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <span id="cerrar">&times;</span>
+    <div id="detalle"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
