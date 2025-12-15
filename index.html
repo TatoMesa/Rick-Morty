@@ -2,24 +2,25 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../img/rick-and-morty.png" />
   <title>Rick & Morty Explorer</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
 <header>
-  <h1>Rick & Morty Explorer</h1>
+    <img src="../img/Rick-and-Morty-500x281.png" alt="">
+    <input type="text" id="search" placeholder="Buscar personaje..." />
+    <label for="status">Estado del personaje</label>
+    <select id="status">
+        <option value="">Estado</option>
+        <option value="alive">Alive</option>
+        <option value="dead">Dead</option>
+        <option value="unknown">Unknown</option>
+    </select>
 
-  <input type="text" id="search" placeholder="Buscar personaje..." />
-
-  <select id="status">
-    <option value="">Estado</option>
-    <option value="alive">Alive</option>
-    <option value="dead">Dead</option>
-    <option value="unknown">Unknown</option>
-  </select>
-
-  <button id="favoritosBtn">Favoritos</button>
+    <button id="favoritosBtn">Favoritos</button>
 </header>
 
 <main>
