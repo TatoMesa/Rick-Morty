@@ -115,8 +115,10 @@ cargarMasBtn.addEventListener("click", () => {
   obtenerPersonajes();
 });
 
-document.getElementById("favoritosBtn").addEventListener("click", () => {
+const btnFavoritos = document.getElementById("favoritosBtn");
+btnFavoritos.addEventListener("click", () => {
   mostrandoFavoritos = !mostrandoFavoritos;
+  btnFavoritos.textContent = mostrandoFavoritos ? "Todos los personajes" : "Favoritos";
   cargarMasBtn.style.display = mostrandoFavoritos ? "none" : "block";
   renderizar(mostrandoFavoritos ? favoritos : personajes);
 });
